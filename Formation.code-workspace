@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "my-app"
+		},
+		{
+			"path": "exercices-react"
+		},
+		{
+			"path": "hello-redux"
+		}
+	],
+	"settings": {}
+}

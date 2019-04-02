@@ -1,0 +1,35 @@
+$border: 1px solid black;
+$width: 200px;
+
+.Selected {
+  user-select: none;
+  padding: 5px;
+  border: $border;
+  border-radius: 5px;
+  width: $width;
+  box-sizing: border-box;
+}
+
+.Opened {
+  .Selected {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .Items {
+    background-color: #fff;
+    position: absolute;
+    border-left: $border;
+    border-right: $border;
+    border-bottom: $border;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: $width;
+    box-sizing: border-box;
+  }
+
+  .Item {
+    background-color: blue;
+  }
+}
