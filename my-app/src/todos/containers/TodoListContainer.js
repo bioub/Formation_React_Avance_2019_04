@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { TodoList } from '../components/TodoList/TodoList';
 import { selectTodosItems, selectTodosCount } from '../selectors';
+import { todoDelete } from '../actions';
 
 function mapStateToProps(state) {
   return {
@@ -9,4 +10,19 @@ function mapStateToProps(state) {
   };
 }
 
-export const TodoListContainer = connect(mapStateToProps)(TodoList);
+// function mapDispatchToProps(dispatch) {
+//   return {
+//     onDeleteItem: item => dispatch(todoDelete(item)),
+//   };
+// }
+
+// en raccourci (si action creators) :
+
+const mapDispatchToProps = {
+  onDeleteItem: todoDelete
+};
+
+export const TodoListContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(TodoList);

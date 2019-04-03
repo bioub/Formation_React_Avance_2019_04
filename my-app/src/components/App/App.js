@@ -1,9 +1,11 @@
-import React from 'react';
-import './App.css';
-import { Todos } from '../../todos/components/Todos/Todos';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Users } from '../../users/components/Users/Users';
+import React from 'react';
+
+import { Todos } from '../../todos/components/Todos/Todos';
 import { TopBar } from '../TopBar/TopBar';
+import { Users } from '../../users/components/Users/Users';
+
+import './App.css';
 
 function App() {
   return (

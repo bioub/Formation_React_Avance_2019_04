@@ -1,0 +1,21 @@
+.btn-submit-enter {
+  opacity: 0.2;
+}
+
+.btn-submit-enter-done {
+  opacity: 1;
+}
+
+.btn-submit-enter-active {
+  opacity: 1;
+  transition: opacity 5s ease;
+}
+
+.btn-submit-exit, .btn-submit-exit-done {
+  opacity: 0.2;
+}
+
+.btn-submit-exit-active {
+  opacity: 1;
+  transition: opacity 5s ease;
+}

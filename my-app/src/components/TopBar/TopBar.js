@@ -1,9 +1,11 @@
-import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
+import Link from '@material-ui/core/Link';
+import React from 'react';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { Link as RouterLink } from 'react-router-dom';
-import Link from '@material-ui/core/Link';
+
+import { UsersCountContainer } from '../../users/containers/UsersCountContainer';
 
 import './TopBar.css';
 
@@ -19,7 +21,7 @@ export function TopBar() {
             Todos
           </Link>
           <Link component={RouterLink} to="/users" color="inherit">
-            Users
+            <UsersCountContainer />
           </Link>
         </Toolbar>
       </AppBar>

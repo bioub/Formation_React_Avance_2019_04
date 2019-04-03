@@ -1,4 +1,4 @@
-import { TODO_CHANGE, TODO_ADD } from './constants';
+import { TODO_CHANGE, TODO_ADD, TODO_DELETE } from './constants';
 
 function randomInt() {
   return Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
@@ -6,6 +6,10 @@ function randomInt() {
 
 function todoChange(payload) {
   return { type: TODO_CHANGE, payload };
+}
+
+function todoDelete(payload) {
+  return { type: TODO_DELETE, payload };
 }
 
 function todoAdd(text) {
@@ -19,4 +23,4 @@ function todoAdd(text) {
   };
 }
 
-export { todoChange, todoAdd };
+export { todoChange, todoAdd, todoDelete };
